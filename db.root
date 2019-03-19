@@ -8,7 +8,7 @@
 ; using root hints. See: https://wiki.opennic.org/opennic/t2slaved
 ;
 ; This file is maintained by ModernTLD via HTTPS at
-;      https://
+;      https://raw.githubusercontent.com/moderntld/bind9/master/db.root
 ;
 ; Last update: March 19, 2019
 ;
