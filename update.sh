@@ -166,7 +166,6 @@ if [ "$DEBUG" ]; then
   echo "Test file:	$tmp_dest"
 else
   mv "$tmp_dest" "$destination"
-  $RNDC reload > /dev/null
 fi
 
 rm -f $LOCK
