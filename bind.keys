@@ -1,20 +1,4 @@
-managed-keys {
-        . 257 3 8 "AwEAAaq+qqsdDHByq/DFR5/u23qcDNOQJzjYBcSfjrGN
-                                LdY2+vY+ubhuiz0hG1xk5D+dK78Eh58wZ3tQnsRr3bVN
-                                Vfcovlx/rdwuw5blez2TT0Et4IF/3b/RpMpCwSSOWTMG
-                                vi0EwIMNsjYWEZlRjcWku3cnAAvSD3YdaRW2JCKsbkK5
-                                OQp2YjuQgIOL7J6f8mN6nkfAWd9L2U9H+TSEnx8gqqkX
-                                IEIRWcbdWN1FiCdy3L8CaHbZcttzx5lLOGrjPW+raXn+
-                                KaQSU+WW9n2PPOZbNUrQnsW/DJ+b+soNQQbhwFlp/av5
-                                VzaxB7/57vEKqj71x+Xu8S0sGpLcXrkf5p3ri93ScLsJ
-                                OT11fIlMRIwcKsWZEIIyYzuQeq8MoVTenvN6re/y872V
-                                b6JBHbBMk0JmsRwkXltz9PINWyvVyqM3PA1bJ4fz8Qbq
-                                XnTnJiR/yylhcE8rjPUtnf29NyDN7Co9JzPwnwE74F3k
-                                3R18w45L8E5Dt5it2PIA9/rb6GDMrPAPsa1X82qNLzcb
-                                oosMj9vT7Ofg8M+x2/VYt6u4xX4glZRavyjTs6qGfzFS
-                                +Z44zrIP4CtNa0fL0AwJ/wsK4YJSX0xZ6/CJI/NNXeSg
-                                G5vfMw04kUDI9d9oO9jkAhYDmTaOI6C5nVTymAs3uje8
-                                /mZlo/pUSllB0DkpTgd5PTAwQsA1";
+trusted-keys {
         . 257 3 8 "AwEAAb1bNwdR+EXWDqKGC9gS8vAXzyPCTK/aNNOoSoE6qQlP6cp8Ye+K
                    pXfJm8fKDkBXZd1/8vT0RoNLYKt3LCZyg5z04+AigFj/vrOrSXBgQxRG
                    vNl31qgAdg4CWvw48ENhQGSNH5CRxGLfMTKa3sMBE9rALLi+DHxgR5Zq
