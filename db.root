@@ -1,90 +1,80 @@
-;       This file holds the information on root name servers needed to
-;       initialize cache of Internet domain name servers
-;       (e.g. reference this file in the "cache  .  <file>"
-;       configuration file of BIND domain name servers).
+; OpenNIC Root Servers
+; servers.opennic.org
 ;
-;       This file is made available by InterNIC
-;       under anonymous FTP as
-;           file                /domain/named.cache
-;           on server           FTP.INTERNIC.NET
-;       -OR-                    RS.INTERNIC.NET
+; This file holds the root server information needed to connect to the OpenNIC
+; network. Reference this file when creating a new BIND DNS server.
 ;
-;       last update:    February 17, 2016
-;       related version of root zone:   2016021701
+; Tier 2 server operators should consider slaving the root zones instead of
+; using root hints. See: https://wiki.opennic.org/opennic/t2slaved
 ;
-; formerly NS.INTERNIC.NET
+; This file is maintained by ModernTLD via HTTPS at
+;      https://
 ;
-.                        3600000      NS    A.ROOT-SERVERS.NET.
-A.ROOT-SERVERS.NET.      3600000      A     198.41.0.4
-A.ROOT-SERVERS.NET.      3600000      AAAA  2001:503:ba3e::2:30
+; Last update: March 19, 2019
 ;
-; FORMERLY NS1.ISI.EDU
+; NS2.OPENNIC.GLUE
+; operated by shdwdrgn
+.                 86400 IN  NS    ns2.opennic.glue.
+ns2.opennic.glue. 7200  IN  A     161.97.219.84
+ns2.opennic.glue. 7200  IN  AAAA  2001:470:4212:10:0:100:53:10
 ;
-.                        3600000      NS    B.ROOT-SERVERS.NET.
-B.ROOT-SERVERS.NET.      3600000      A     192.228.79.201
-B.ROOT-SERVERS.NET.      3600000      AAAA  2001:500:84::b
 ;
-; FORMERLY C.PSI.NET
+;;; NS3.OPENNIC.GLUE [disabled]
+;;; operated by neo
+;;.                 86400 IN  NS    ns3.opennic.glue.
+;;ns3.opennic.glue. 7200  IN  A     104.168.144.17
+;;ns3.opennic.glue. 7200  IN  AAAA  2001:470:8269::53
 ;
-.                        3600000      NS    C.ROOT-SERVERS.NET.
-C.ROOT-SERVERS.NET.      3600000      A     192.33.4.12
-C.ROOT-SERVERS.NET.      3600000      AAAA  2001:500:2::c
 ;
-; FORMERLY TERP.UMD.EDU
+;;; NS4.OPENNIC.GLUE [disabled]
+;;; operated by furnic
+;;.                 86400 IN  NS    ns4.opennic.glue.
+;;ns4.opennic.glue. 7200  IN  A     163.172.168.171
 ;
-.                        3600000      NS    D.ROOT-SERVERS.NET.
-D.ROOT-SERVERS.NET.      3600000      A     199.7.91.13
-D.ROOT-SERVERS.NET.      3600000      AAAA  2001:500:2d::d
 ;
-; FORMERLY NS.NASA.GOV
+; NS5.OPENNIC.GLUE
+; operated by verax
+.                 86400 IN  NS    ns5.opennic.glue.
+ns5.opennic.glue. 7200  IN  A     94.103.153.176
+ns5.opennic.glue. 7200  IN  AAAA  2a02:990:219:1:ba:1337:cafe:3
 ;
-.                        3600000      NS    E.ROOT-SERVERS.NET.
-E.ROOT-SERVERS.NET.      3600000      A     192.203.230.10
 ;
-; FORMERLY NS.ISC.ORG
+; NS6.OPENNIC.GLUE
+; operated by texnofobix
+.                 86400 IN  NS    ns6.opennic.glue.
+ns6.opennic.glue. 7200  IN  A     207.192.71.13
 ;
-.                        3600000      NS    F.ROOT-SERVERS.NET.
-F.ROOT-SERVERS.NET.      3600000      A     192.5.5.241
-F.ROOT-SERVERS.NET.      3600000      AAAA  2001:500:2f::f
 ;
-; FORMERLY NS.NIC.DDN.MIL
+; NS8.OPENNIC.GLUE
+; operated by stephanj
+.                 86400 IN  NS    ns8.opennic.glue.
+ns8.opennic.glue. 7200  IN  A     178.63.116.152
+ns8.opennic.glue. 7200  IN  AAAA  2a01:4f8:141:4281::999
 ;
-.                        3600000      NS    G.ROOT-SERVERS.NET.
-G.ROOT-SERVERS.NET.      3600000      A     192.112.36.4
 ;
-; FORMERLY AOS.ARL.ARMY.MIL
+;;; NS9.OPENNIC.GLUE [disabled]
+;;; operated by jonaharagon
+;;.                 86400 IN  NS    ns9.opennic.glue.
+;;ns9.opennic.glue. 7200  IN  A     174.138.48.29
+;;ns9.opennic.glue. 7200  IN  AAAA  2604:a880:800:a1::2a:2001
 ;
-.                        3600000      NS    H.ROOT-SERVERS.NET.
-H.ROOT-SERVERS.NET.      3600000      A     198.97.190.53
-H.ROOT-SERVERS.NET.      3600000      AAAA  2001:500:1::53
 ;
-; FORMERLY NIC.NORDU.NET
+; NS10.OPENNIC.GLUE
+; operated by mars
+.                  86400 IN  NS    ns10.opennic.glue.
+ns10.opennic.glue. 7200  IN  A     188.226.146.136
+ns10.opennic.glue. 7200  IN  AAAA  2001:470:1f04:ebf::2
 ;
-.                        3600000      NS    I.ROOT-SERVERS.NET.
-I.ROOT-SERVERS.NET.      3600000      A     192.36.148.17
-I.ROOT-SERVERS.NET.      3600000      AAAA  2001:7fe::53
 ;
-; OPERATED BY VERISIGN, INC.
+; NS11.OPENNIC.GLUE
+; operated by jonaharagon
+.                  86400 IN  NS    ns11.opennic.glue.
+ns11.opennic.glue. 7200  IN  A     51.75.173.177
 ;
-.                        3600000      NS    J.ROOT-SERVERS.NET.
-J.ROOT-SERVERS.NET.      3600000      A     192.58.128.30
-J.ROOT-SERVERS.NET.      3600000      AAAA  2001:503:c27::2:30
 ;
-; OPERATED BY RIPE NCC
-;
-.                        3600000      NS    K.ROOT-SERVERS.NET.
-K.ROOT-SERVERS.NET.      3600000      A     193.0.14.129
-K.ROOT-SERVERS.NET.      3600000      AAAA  2001:7fd::1
-;
-; OPERATED BY ICANN
-;
-.                        3600000      NS    L.ROOT-SERVERS.NET.
-L.ROOT-SERVERS.NET.      3600000      A     199.7.83.42
-L.ROOT-SERVERS.NET.      3600000      AAAA  2001:500:3::42
-;
-; OPERATED BY WIDE
-;
-.                        3600000      NS    M.ROOT-SERVERS.NET.
-M.ROOT-SERVERS.NET.      3600000      A     202.12.27.33
-M.ROOT-SERVERS.NET.      3600000      AAAA  2001:dc3::35
-; End of file
+;;; NS12.OPENNIC.GLUE [disabled]
+;;; operated by sy
+;;; operated by albino
+;;.                  86400 IN  NS    ns12.opennic.glue.
+;;ns12.opennic.glue. 7200  IN  A     79.124.7.81
+;;ns12.opennic.glue. 7200  IN  AAAA  2a01:8740:1:ff13::ae67
