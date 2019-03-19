@@ -3,13 +3,13 @@
 
 cd /opt/tld/bind-conf/
 
-git fetch origin master
-git reset --hard origin/master
+git fetch origin master > /dev/null
+git reset --hard origin/master > /dev/null
 
 # BEGIN srvzone code
 
 file_root='/var/cache/bind/db.root'
-file_master='/etc/bind/opennic/master/$TLD'
+file_master='/etc/bind/zone/master/$TLD/db.$TLD'
 file_slave='/var/cache/bind/db.$TLD'
 destination='/tmp/named.conf.opennic-final'
 tmp_dest='/tmp/named.conf.opennic'
