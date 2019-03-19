@@ -3,7 +3,8 @@
 
 cd /opt/tld/bind-conf/
 
-git pull
+git fetch origin master
+git reset --hard origin/master
 
 # BEGIN srvzone code
 
