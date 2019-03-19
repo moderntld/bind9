@@ -1,50 +1,31 @@
-# The bind.keys file is used to override the built-in DNSSEC trust anchors
-# which are included as part of BIND 9.  The only trust anchors it contains
-# are for the DNS root zone (".").  Trust anchors for any other zones MUST
-# be configured elsewhere; if they are configured here, they will not be
-# recognized or used by named.
-#
-# The built-in trust anchors are provided for convenience of configuration.
-# They are not activated within named.conf unless specifically switched on.
-# To use the built-in key, use "dnssec-validation auto;" in the
-# named.conf options.  Without this option being set, the keys in this
-# file are ignored.
-#
-# This file is NOT expected to be user-configured.
-#
-# These keys are current as of October 2017.  If any key fails to
-# initialize correctly, it may have expired.  In that event you should
-# replace this file with a current version.  The latest version of
-# bind.keys can always be obtained from ISC at https://www.isc.org/bind-keys.
-#
-# See https://data.iana.org/root-anchors/root-anchors.xml
-# for current trust anchor information for the root zone.
-
 managed-keys {
-        # This key (19036) is to be phased out starting in 2017. It will
-        # remain in the root zone for some time after its successor key
-        # has been added. It will remain this file until it is removed from
-        # the root zone.
-        . initial-key 257 3 8 "AwEAAagAIKlVZrpC6Ia7gEzahOR+9W29euxhJhVVLOyQbSEW0O8gcCjF
-                FVQUTf6v58fLjwBd0YI0EzrAcQqBGCzh/RStIoO8g0NfnfL2MTJRkxoX
-                bfDaUeVPQuYEhg37NZWAJQ9VnMVDxP/VHL496M/QZxkjf5/Efucp2gaD
-                X6RS6CXpoY68LsvPVjR0ZSwzz1apAzvN9dlzEheX7ICJBBtuA6G3LQpz
-                W5hOA2hzCTMjJPJ8LbqF6dsV6DoBQzgul0sGIcGOYl7OyQdXfZ57relS
-                Qageu+ipAdTTJ25AsRTAoub8ONGcLmqrAmRLKBP1dfwhYB4N7knNnulq
-                QxA+Uk1ihz0=";
-
-        # This key (20326) was published in the root zone in 2017.
-        # Servers which were already using the old key (19036) should
-        # roll seamlessly to this new one via RFC 5011 rollover. Servers
-        # being set up for the first time can use the contents of this
-        # file as initializing keys; thereafter, the keys in the
-        # managed key database will be trusted and maintained
-        # automatically.
-        . initial-key 257 3 8 "AwEAAaz/tAm8yTn4Mfeh5eyI96WSVexTBAvkMgJzkKTOiW1vkIbzxeF3
-                +/4RgWOq7HrxRixHlFlExOLAJr5emLvN7SWXgnLh4+B5xQlNVz8Og8kv
-                ArMtNROxVQuCaSnIDdD5LKyWbRd2n9WGe2R8PzgCmr3EgVLrjyBxWezF
-                0jLHwVN8efS3rCj/EWgvIWgb9tarpVUDK/b58Da+sqqls3eNbuv7pr+e
-                oZG+SrDK6nWeL3c6H5Apxz7LjVc1uTIdsIXxuOLYA4/ilBmSVIzuDWfd
-                RUfhHdY6+cn8HFRm+2hM8AnXGXws9555KrUB5qihylGa8subX2Nn6UwN
-                R1AkUTV74bU=";
+        . 257 3 8 "AwEAAaq+qqsdDHByq/DFR5/u23qcDNOQJzjYBcSfjrGN
+                                LdY2+vY+ubhuiz0hG1xk5D+dK78Eh58wZ3tQnsRr3bVN
+                                Vfcovlx/rdwuw5blez2TT0Et4IF/3b/RpMpCwSSOWTMG
+                                vi0EwIMNsjYWEZlRjcWku3cnAAvSD3YdaRW2JCKsbkK5
+                                OQp2YjuQgIOL7J6f8mN6nkfAWd9L2U9H+TSEnx8gqqkX
+                                IEIRWcbdWN1FiCdy3L8CaHbZcttzx5lLOGrjPW+raXn+
+                                KaQSU+WW9n2PPOZbNUrQnsW/DJ+b+soNQQbhwFlp/av5
+                                VzaxB7/57vEKqj71x+Xu8S0sGpLcXrkf5p3ri93ScLsJ
+                                OT11fIlMRIwcKsWZEIIyYzuQeq8MoVTenvN6re/y872V
+                                b6JBHbBMk0JmsRwkXltz9PINWyvVyqM3PA1bJ4fz8Qbq
+                                XnTnJiR/yylhcE8rjPUtnf29NyDN7Co9JzPwnwE74F3k
+                                3R18w45L8E5Dt5it2PIA9/rb6GDMrPAPsa1X82qNLzcb
+                                oosMj9vT7Ofg8M+x2/VYt6u4xX4glZRavyjTs6qGfzFS
+                                +Z44zrIP4CtNa0fL0AwJ/wsK4YJSX0xZ6/CJI/NNXeSg
+                                G5vfMw04kUDI9d9oO9jkAhYDmTaOI6C5nVTymAs3uje8
+                                /mZlo/pUSllB0DkpTgd5PTAwQsA1";
+        . 257 3 8 "AwEAAb1bNwdR+EXWDqKGC9gS8vAXzyPCTK/aNNOoSoE6qQlP6cp8Ye+K
+                   pXfJm8fKDkBXZd1/8vT0RoNLYKt3LCZyg5z04+AigFj/vrOrSXBgQxRG
+                   vNl31qgAdg4CWvw48ENhQGSNH5CRxGLfMTKa3sMBE9rALLi+DHxgR5Zq
+                   abj6LIKm0Qlmp/IfwufSjhdIbQM2+t+HoDB0d9sZF12JHn6X4nGsiGWd
+                   euaceFgBZmIqKV31SNg6sqXEU7DgGlDIw2IvCsSFhuW3P0s+jNf4BzUf
+                   P5lof8jIWpRxSAlijTYlDsg36CyAVD3azlNj9c8vrXbaV4Bujav6XDoM
+                   mvEMVZUctuvjvL3aQg8a60myH8mzwl6MD4SNWdHP4VX38pJ1Ec+hxo1r
+                   U3FvUusZvOMU1GUrX2zj7g+Pfg9iRNCuHF/3RgvuOjt+Mkbgvk44Wtlh
+                   qSmA1xzAqmfeghpZxib0P/anyHqQWUbqX0r/tG/b1/o+GSe2Dx3IR6a1
+                   trHn56lSfpl/U+ubTXIKOgLHDgUbdMJW2qbdTH92rkTa/5g+y+FzQ50G
+                   kqH1ptKK7G0VQftqtZPWNZcnJNsTvMGFeBdLOU+2iFXnLkpiusRZ/sW8
+                   1VPm1FCwc+qfwucpq2BkkDcH79a1AmFIicbmlTfUyxP8pTrpllgcW48I
+                   mpqMNu1V+In3NWTL";
 };
