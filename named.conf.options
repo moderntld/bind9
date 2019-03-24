@@ -12,13 +12,10 @@ options {
 		opennic_T0; opennic_T1; opennic_T2;
 		opennic_whitelist; localhost;
 	};
-		allow-query {
-		opennic_T0; opennic_T1; opennic_T2;
-		opennic_whitelist; localhost;
-	};
-	allow-query-cache {
-		opennic_T0; opennic_T1; opennic_T2;
-		opennic_whitelist; localhost;
+
+	// Allow queries from anyone.
+	allow-query {
+		any;
 	};
 
 	// Allow transfers to anyone.
