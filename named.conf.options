@@ -4,7 +4,7 @@ options {
 	version "moderntld-git-bind9";
 
 	// Notify for all zones, as we are always an authority.
-	also-notify: { opennic_master_T0; opennic_master_T1; opennic_master_T2; };
+	also-notify { opennic_master_T0; opennic_master_T1; opennic_master_T2; };
 
 	// Only allow recursion from whitelisted servers.
 	// Recursion is not mandatory on Tier 1 servers.
