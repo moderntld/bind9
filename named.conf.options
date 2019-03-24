@@ -3,6 +3,28 @@ options {
 	dnssec-validation auto;
 	version "moderntld-git-bind9";
 
-	auth-nxdomain no;    # conform to RFC1035
+	// Notify for all zones, as we are always an authority.
+	also-notify: { opennic_master_T0; opennic_master_T1; opennic_master_T2; };
+
+	// Only allow recursion from whitelisted servers.
+	// Recursion is not mandatory on Tier 1 servers.
+	allow-recursion {
+		opennic_T0; opennic_T1; opennic_T2;
+		opennic_whitelist; localhost;
+	};
+		allow-query {
+		opennic_T0; opennic_T1; opennic_T2;
+		opennic_whitelist; localhost;
+	};
+	allow-query-cache {
+		opennic_T0; opennic_T1; opennic_T2;
+		opennic_whitelist; localhost;
+	};
+
+	// Allow transfers to anyone.
+	// DNS is public anyways! https://github.com/moderntld/.o
+	allow-transfer { any; };
+
+	auth-nxdomain no;
 	listen-on-v6 { any; };
 };
