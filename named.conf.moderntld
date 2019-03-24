@@ -1,0 +1,15 @@
+# ModernTLD's Top-Level Domains!
+#
+# https://github.com/moderntld/.o
+zone "o" in {
+	type master;
+	file "/etc/bind/zone/master/o/db.o";
+	allow-transfer { any; };
+	notify yes;
+	also-notify {
+		45.56.115.189;
+		45.56.116.224;
+		2001:470:1f0e:8a0::2;
+		2600:3c02::f03c:91ff:fe33:e1ba;
+	};
+};
