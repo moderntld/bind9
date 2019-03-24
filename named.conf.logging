@@ -1,0 +1,16 @@
+logging {
+        channel default_debug {
+                    file "data/named.run";
+                severity dynamic;
+        };
+        // Redirect all of those 'denied' logs for non-existing domains or external ones
+        //   logs to /var/named/data/named.security, up to 3 files of 5mbytes each
+        //   independent hack_detect processes can then scan for flooders and known abusers and block their IPs
+        channel hd_security {
+                file "data/named.security" versions 3 size 5m;
+                print-time yes;
+                print-severity yes;
+                print-category yes;
+        };
+        category security { hd_security; };
+};
