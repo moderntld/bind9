@@ -1,0 +1,28 @@
+# Top-Level Domains on ns9.opennic.glue!
+#
+# https://github.com/moderntld/nmczone
+zone "bit" in {
+	type master;
+	file "/etc/bind/zone/master/bit/db.bit";
+	allow-transfer { any; };
+	notify yes;
+	also-notify {
+		45.56.115.189;
+		45.56.116.224;
+		2001:470:1f0e:8a0::2;
+		2600:3c02::f03c:91ff:fe33:e1ba;
+	};
+};
+
+# ModernTLD Slave Zones
+#
+# .o
+zone "o" in {
+	type slave;
+	file "/var/cache/bind/db.o";
+  allow-transfer { any; };
+	notify no;
+	masters {
+		51.75.173.177;
+	};
+};

@@ -27,20 +27,6 @@ zone "bbs" in {
 	};
 };
 
-zone "bit" in {
-	type slave;
-	file "/var/cache/bind/db.bit";
-	notify no;
-	masters {
-		174.138.48.29;                          # ns9.opennic.glue
-		2604:a880:800:a1::2a:2001;              # ns9.opennic.glue
-		45.56.115.189;                          # ns0.opennic.glue
-		45.56.116.224;                          # ns0.opennic.glue
-		2001:470:1f0e:8a0::2;                   # ns0.opennic.glue
-		2600:3c02::f03c:91ff:fe33:e1ba;         # ns0.opennic.glue
-	};
-};
-
 zone "chan" in {
 	type slave;
 	file "/var/cache/bind/db.chan";
