@@ -5,7 +5,6 @@
 zone "." in {
 	type slave;
 	file "/var/cache/bind/db.root";
-	notify no;
 	masters {
 		45.56.115.189;                          # ns0.opennic.glue
 		45.56.116.224;                          # ns0.opennic.glue
@@ -17,7 +16,6 @@ zone "." in {
 zone "bbs" in {
 	type slave;
 	file "/var/cache/bind/db.bbs";
-	notify no;
 	masters {
 		207.192.71.13;                          # ns6.opennic.glue
 		45.56.115.189;                          # ns0.opennic.glue
@@ -30,7 +28,6 @@ zone "bbs" in {
 zone "chan" in {
 	type slave;
 	file "/var/cache/bind/db.chan";
-	notify no;
 	masters {
 		94.103.153.176;                         # ns5.opennic.glue
 		2a02:990:219:1:ba:1337:cafe:3;          # ns5.opennic.glue
@@ -44,7 +41,6 @@ zone "chan" in {
 zone "cyb" in {
 	type slave;
 	file "/var/cache/bind/db.cyb";
-	notify no;
 	masters {
 		79.124.7.81;                            # ns12.opennic.glue
 		2a01:8740:1:ff13::ae67;                 # ns12.opennic.glue
@@ -58,7 +54,6 @@ zone "cyb" in {
 zone "dns.opennic.glue" in {
 	type slave;
 	file "/var/cache/bind/db.dns.opennic.glue";
-	notify no;
 	masters {
 		45.56.115.189;                          # ns0.opennic.glue
 		45.56.116.224;                          # ns0.opennic.glue
@@ -70,7 +65,6 @@ zone "dns.opennic.glue" in {
 zone "dyn" in {
 	type slave;
 	file "/var/cache/bind/db.dyn";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -84,7 +78,6 @@ zone "dyn" in {
 zone "geek" in {
 	type slave;
 	file "/var/cache/bind/db.geek";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -98,7 +91,6 @@ zone "geek" in {
 zone "gopher" in {
 	type slave;
 	file "/var/cache/bind/db.gopher";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -112,7 +104,6 @@ zone "gopher" in {
 zone "indy" in {
 	type slave;
 	file "/var/cache/bind/db.indy";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -126,7 +117,6 @@ zone "indy" in {
 zone "libre" in {
 	type slave;
 	file "/var/cache/bind/db.libre";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -140,7 +130,6 @@ zone "libre" in {
 zone "neo" in {
 	type slave;
 	file "/var/cache/bind/db.neo";
-	notify no;
 	masters {
 		104.168.144.17;                         # ns3.opennic.glue
 		2001:470:8269::53;                      # ns3.opennic.glue
@@ -154,7 +143,6 @@ zone "neo" in {
 zone "null" in {
 	type slave;
 	file "/var/cache/bind/db.null";
-	notify no;
 	masters {
 		188.226.146.136;                        # ns10.opennic.glue
 		2001:470:1f04:ebf::2;                   # ns10.opennic.glue
@@ -168,7 +156,6 @@ zone "null" in {
 zone "opennic.glue" in {
 	type slave;
 	file "/var/cache/bind/db.opennic.glue";
-	notify no;
 	masters {
 		45.56.115.189;                          # ns0.opennic.glue
 		45.56.116.224;                          # ns0.opennic.glue
@@ -180,7 +167,6 @@ zone "opennic.glue" in {
 zone "oss" in {
 	type slave;
 	file "/var/cache/bind/db.oss";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -194,7 +180,6 @@ zone "oss" in {
 zone "oz" in {
 	type slave;
 	file "/var/cache/bind/db.oz";
-	notify no;
 	masters {
 		188.226.146.136;                        # ns10.opennic.glue
 		2001:470:1f04:ebf::2;                   # ns10.opennic.glue
@@ -208,7 +193,6 @@ zone "oz" in {
 zone "parody" in {
 	type slave;
 	file "/var/cache/bind/db.parody";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
@@ -222,7 +206,6 @@ zone "parody" in {
 zone "pirate" in {
 	type slave;
 	file "/var/cache/bind/db.pirate";
-	notify no;
 	masters {
 		161.97.219.84;                          # ns2.opennic.glue
 		2001:470:4212:10:0:100:53:10;           # ns2.opennic.glue
