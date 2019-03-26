@@ -25,5 +25,5 @@ zone "bit" in {
 	masters {
 		51.77.227.84;
 	};
-	allow-notify { 10.11.11.11; 10.11.80.9; opennic_master_T0; opennic_master_T1; };
+	allow-notify { 10.11.11.11; 10.11.80.9; opennic_T0; opennic_T1; };
 };
